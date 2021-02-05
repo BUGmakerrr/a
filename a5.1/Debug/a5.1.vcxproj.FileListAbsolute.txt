@@ -1,0 +1,2 @@
+F:\VS\a5.1\Debug\a5.1.exe
+F:\VS\a5.1\Debug\a5.1.pdb
