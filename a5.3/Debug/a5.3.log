@@ -1,0 +1,9 @@
+﻿  test.cpp
+F:\VS\a5.3\test.cpp(13,1): warning C4305: “=”: 从“int”到“char”截断
+F:\VS\a5.3\test.cpp(13,13): warning C4309: “=”: 截断常量值
+F:\VS\a5.3\test.cpp(9,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\VS\a5.3\test.cpp(22,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\VS\a5.3\test.cpp(29,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\VS\a5.3\test.cpp(83,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+F:\VS\a5.3\test.cpp(84,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  a5.3.vcxproj -> F:\VS\a5.3\Debug\a5.3.exe
