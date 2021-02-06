@@ -1,2 +1,4 @@
 F:\VS\a.4.4\Debug\a.4.4.exe
 F:\VS\a.4.4\Debug\a.4.4.pdb
+F:\VS\a4.4\Debug\a.4.4.exe
+F:\VS\a4.4\Debug\a.4.4.pdb

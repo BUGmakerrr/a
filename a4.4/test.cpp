@@ -21,14 +21,14 @@ public:
 template<typename T, typename Alloc = Allocator<T>>
 class Vector {
 public:
-	Vector<T>(size_t size = 10) {
+	Vector<T,Alloc>(size_t size = 10) {
 		//_first = new T[size];
 		_first = _allocator.allocate(size);
 
 		_last = _first;
 		_end = _first + size;
 	}
-	~Vector<T>() {
+	~Vector<T, Alloc>() {
 		//delete[]_first;
 		for (T* p = _first; p != _last; ++p) {//析构有效内存
 			_allocator.destroy(p);
@@ -37,7 +37,7 @@ public:
 
 		_first = _last = _end = nullptr;
 	}
-	Vector<T>(const Vector<T>& rhs) {
+	Vector<T, Alloc>(const Vector<T>& rhs) {
 		int size = rhs._end - rhs._first;
 		//_first = new T[size];
 		_first = _allocator.allocate(size);
@@ -52,7 +52,7 @@ public:
 		_last = _first + len;
 		_end = _first + size;
 	}
-	Vector<T>& operator=(const Vector<T>& rhs) {
+	Vector<T, Alloc>& operator=(const Vector<T>& rhs) {
 		if (this == &rhs)
 			return *this;
 		//delete[]_first;
@@ -107,7 +107,7 @@ private:
 	T* _last;
 	T* _end;
 
-	Alloc _allocater;
+	Alloc _allocator;
 	void expand() {
 		int size = _end - _first;
 		//T* ptmp = new T[size * 2];
@@ -146,7 +146,6 @@ int main() {
 	vec1.push_back(t1);
 	vec1.push_back(t2);
 	vec1.push_back(t3);
-	vec1.pop_back();
 
 	return 0;
 }
