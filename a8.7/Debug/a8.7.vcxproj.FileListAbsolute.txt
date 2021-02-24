@@ -1,0 +1,2 @@
+F:\VS\a8.7\Debug\a8.7.exe
+F:\VS\a8.7\Debug\a8.7.pdb
