@@ -1,0 +1,2 @@
+F:\VS\b1.1\Debug\b1.1.exe
+F:\VS\b1.1\Debug\b1.1.pdb
